@@ -38,7 +38,7 @@ const dbConnect = {
         oldLeaves.forEach(leave => {
           leave.is_active = false;
           leave.cancelled_by = leaveData.approved_by;
-          leave.leave_cancelled = leave_start
+          leave.leave_cancelled = leaveData.leave_start
           db.table(leaveTable).where("id", leave.id).update(leave);
         });
       }

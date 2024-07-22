@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { dbConnect } = require('../../configuration/db');
 const DiscordConfigs = require('../../configuration/discordConfigs');
-const { log, logFields } = require('../../configuration/logs');
+const { log, logFields, error } = require('../../configuration/logs');
 const leaveLogChannel = DiscordConfigs.leave.leaveLogChannel ?? DiscordConfigs.leave.allLogChannel;
 
 module.exports = {

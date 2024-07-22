@@ -13,7 +13,7 @@ Install Packages
 
 Copy ```.env.example``` file and rename to ```.env```
 
-Update ```src/configuration/deployCommands.js``` file with proper discord roles and channel ids.
+Update ```src/configuration/discordConfigs.js``` file with proper discord roles and channel ids.
 
 Run server
 

@@ -36,7 +36,7 @@ const DiscordConfigs = {
                 [
                   '1264127928220909588', // EMS Doctor
                   '1264127976602337356' // EMS Nurse
-                ] 
+                ]
         }
     },
     whitelist: {
