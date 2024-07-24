@@ -77,7 +77,6 @@ const dbConnect = {
         leave.is_active = false;
         await db.table(leaveTable).where("id", leave.id).update(leave);
       });
-      log(`Expired leaves disabled for today`, leaveLogs);
     }
     const leaveData = await db.table(leaveTable).where("leave_till", ">=", formattedDate).where("is_active", 1).get();
     return leaveData ?? null;
@@ -106,7 +105,6 @@ const dbConnect = {
         }
       });
 
-      log(`Leaves removed for <@${leaveData.discord_id}> by <@${leaveData.cancelled_by}>`, leaveLogs);
     }
   }
 };

@@ -1,51 +1,63 @@
 const DiscordConfigs = {
-    allLogChannel: '1264162533808410655', // Channel ID where all logs will be sent
+    allLogChannel: '1265554858241560637', // Channel ID where all logs will be sent
     colors: {
         log: '#FFA500',
         error: '#FF0000',
         success: '#00FF00'
     },
     give: {
-        giveLogChannel: '1264162586467897417', // Channel ID where the logs will be sent
+        giveLogChannel: '1265555314414190602', // Channel ID where the logs will be sent
         rolePermissions: {
-            '1264118317090607114': // 'Police Head' can only add 'Police Constable' and 'Police Sub-Inspector'
+            '1249398551138533404': // 'ARPD | Chief of Police' can only add 'ARPD | Deputy Chief of Police' and 'ARPD'
                 [
-                  '1264118356852609044', // Police Constable
-                  '1264127854170345547' // Police Sub-Inspector
+                  '1249398551138533402', // ARPD | Deputy Chief of Police
+                  '1249398551138533405' // ARPD
                 ],
-            '1264127897115820032': // 'EMS Head' can only add 'EMS Doctor' and 'EMS Nurse'
+
+            '1249398551138533402': // 'ARPD | Deputy Chief of Police' can only add 'ARPD'
                 [
-                  '1264127928220909588', // EMS Doctor
-                  '1264127976602337356' // EMS Nurse
+                  '1249398551138533405' // ARPD
+                ],
+
+            '1249398551088201812': // 'ARRT | Head' can only add 'ARRT | Supervisor' and 'ARRT'
+                [
+                  '1249398551088201811', // ARRT | Supervisor
+                  '1249398551088201813' // ARRT
+                ],
+
+            '1249398551088201811': // 'ARRT | Supervisor' can only add 'ARRT'
+                [
+                    '1249398551088201813' // ARRT
                 ]
           }
     },
     leave: {
-        leaveLogChannel: '1264892095316103220', // Channel ID where the logs will be sent
-        leaveRole: '1264147825432858715', // Role ID of the leave role, OnLeave
+        leaveLogChannel: '1265555456407896074', // Channel ID where the logs will be sent
+        leaveRole: '1249398551176544273', // Role ID of the leave role - Leave of Absence
         rolePermissions: {
-            '1264118317090607114': // 'Police Head' can only add leave to following roles
+            '1249398551138533404': // 'ARPD | Chief of Police' can only add leave to following roles
                 [
-                  '1264118356852609044', // Police Constable
-                  '1264127854170345547' // Police Sub-Inspector
+                  //'1264118356852609044', // ARPD | Deputy Chief of Police
+                  '1249398551138533405' // ARPD
                 ],
-            '1264118356852609044': [ // Police Constable can only add leave to following roles
-                '1264127854170345547' // Police Sub-Inspector
+            '1264118356852609044': [ // 'ARPD | Deputy Chief of Police' can only add leave to following roles
+                '1249398551138533405' // ARPD
                 ],
-            '1264127897115820032': // 'EMS Head' can only add 'EMS Doctor' and 'EMS Nurse'
+            '1264127897115820032': // 'ARRT | Head' can only add 'ARRT | Supervisor' and 'ARRT'
                 [
-                  '1264127928220909588', // EMS Doctor
-                  '1264127976602337356' // EMS Nurse
+                  '1249398551088201811', // ARRT | Supervisor
+                  '1249398551088201813' // ARRT
                 ]
         }
     },
     whitelist: {
-        whitelistLogChannel: '1264888798441898138', // Channel ID where the logs will be sent
-        whitelistRole: '1264872922045218859', // Whitelisted role
-        pendingRole: '1264872860137295913', // Pending role
-        revokedRole: '1264877763920138261', // Revoked role
+        whitelistLogChannel: '1265555650407174206', // Channel ID where the logs will be sent
+        whitelistRole: '1249398551080075316', // Whitelisted role - ARRP Citizen
+        pendingRole: '1249982866222223391', // Pending role - ARRP Pending Citizen
+        revokedRole: '1249398551176544274', // Revoked role - Blacklist
         allowedRoles: [ // Which roles can add whitelist.
-            '1264873159908130878', // 'Whitelist Head'
+            '1249412216349003857', // 'Whitelist Head - ARRP Moderator'
+           // '1249411798839590943', // 'Whitelist Head - ARRP Administrator'
         ]
     }
 }

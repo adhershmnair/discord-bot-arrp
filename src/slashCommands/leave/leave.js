@@ -79,7 +79,7 @@ module.exports = {
       } 
       dbConnect.storeLeaveData(leaveData);
 
-      log(`${executingMemberId} assigned leave to <@${targetUser.id}> for ${days} days.`, DiscordConfigs.leave.allLogChannel);
+      log(`<@${executingMemberId}> assigned leave to <@${targetUser.id}> for ${days} days.`, DiscordConfigs.leave.allLogChannel);
       return interaction.reply({ content: `<@${targetUser.id}> has been put on leave for ${days} days by <@${executingMemberId}>.\n Leave starts on: ${currentDate.toDateString()} \n Leave expires on: ${expiryDate.toDateString()}`, ephemeral: true });
     } catch (error) {
       console.error(error);

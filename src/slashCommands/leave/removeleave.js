@@ -54,14 +54,13 @@ module.exports = {
         // Remove the leave data from the database
         try {
           await dbConnect.removeLeaveData(removeLeave);
-          log(`Removed leave data for <@${targetUser.id}> by <@${executingMemberId}>`, leaveLogChannel);
           console.log(`Removed leave data for ${targetUser.id}`);
         } catch (dbError) {
           console.error(dbError);
           // Optionally, handle database-specific errors differently
         }
 
-        return interaction.reply({ content: `All leave removed for <@${targetUser.id}> by <@${executingMemberId}>`, ephemeral: true });
+        return interaction.reply({ content: `Leave removed for <@${targetUser.id}> by <@${executingMemberId}>`, ephemeral: true });
     } catch (error) {
       console.error(error);
       interaction.reply({ content: 'An error occurred while trying to execute that command.', ephemeral: true });
