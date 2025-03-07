@@ -19,6 +19,14 @@ module.exports = {
   async execute(interaction) {
     const iban = interaction.options.getString('iban');
     try {
+
+        const commandChannel = DiscordConfigs.fivempermissions.commandChannel;
+        if (!commandChannel.includes(interaction.channelId)) {
+            await interaction.reply({ content: 'This command can only be used in specific channels.', ephemeral: true });
+            error(`<@${interaction.member.id}> tried to get details with iban number "${iban}", in <#${interaction.channelId}>.`, allLogs);
+            return;
+        }
+
         const rolePermissions = DiscordConfigs.fivempermissions.getinventory;
         let hasPermission = rolePermissions.some(role => interaction.member.roles.cache.has(role));
 

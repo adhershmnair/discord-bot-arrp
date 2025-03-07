@@ -60,6 +60,9 @@ const DiscordConfigs = {
         ]
     },
     fivempermissions: {
+        commandChannel: [
+            '1337647501645447188'
+        ],
         getdetails: [
             '1337647317473562665'
         ],
