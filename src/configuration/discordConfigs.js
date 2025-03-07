@@ -58,6 +58,14 @@ const DiscordConfigs = {
             '1337647317473562665', // 'Whitelist Head - AR | Team'
            // '1249411798839590943', // 'Whitelist Head - ARRP Administrator'
         ]
+    },
+    fivempermissions: {
+        getdetails: [
+            '1337647317473562665'
+        ],
+        getinventory: [
+            '1337647317473562665'
+        ]
     }
 }
 
