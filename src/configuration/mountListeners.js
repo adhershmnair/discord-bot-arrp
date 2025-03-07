@@ -158,7 +158,7 @@ module.exports = () => {
   // **************************
   // ********* Bans ***********
   // **************************
-  client.on('guilBanAdd', async (message) => {
+  client.on('guildBanAdd', async (message) => {
     messageListeners['bans']?.forEach(listener => listener(message, 'add'));
   });
 

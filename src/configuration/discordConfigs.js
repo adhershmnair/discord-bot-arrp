@@ -19,6 +19,15 @@ const DiscordConfigs = {
                   // '1249398551088201811', // ARRT | Supervisor
                   '1337647331780202517' // ARRT
                 ],
+            '1337647310477328417': // Gang Moderators.
+            	[
+                    '1337647332774252634', // Gang Leaders
+                    '1337647333898322022', // Gang Co Leaders
+                    '1337647338172190783', // Gangs
+                    '1343601946606571650', // MDR
+                    '1343604764855767060', // BLD
+                    '1343609108061749301', // ARZ
+                ]
           }
     },
     leave: {
@@ -46,7 +55,7 @@ const DiscordConfigs = {
         pendingRole: '1337647346921635900', // Pending role - ARRP Pending Citizen
         revokedRole: '1337647349341753486', // Revoked role - Blacklist
         allowedRoles: [ // Which roles can add whitelist.
-            '1337647317473562665', // 'Whitelist Head - ARRP Moderator'
+            '1337647317473562665', // 'Whitelist Head - AR | Team'
            // '1249411798839590943', // 'Whitelist Head - ARRP Administrator'
         ]
     }
