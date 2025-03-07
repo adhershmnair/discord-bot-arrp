@@ -68,6 +68,9 @@ const DiscordConfigs = {
         ],
         getinventory: [
             '1337647317473562665'
+        ],
+        getcars: [
+            '1337647317473562665'
         ]
     }
 }
